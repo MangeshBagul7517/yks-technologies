@@ -78,14 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aurelin — German-Engineered uPVC Windows & Doors" },
-      { name: "description", content: "Premium German-engineered uPVC windows and doors. Energy efficient, sound insulating, weather resistant systems for villas, apartments and architectural projects." },
+      { title: "TEST" },
+      { name: "description", content: "TEST" },
       { name: "author", content: "Aurelin" },
-      { property: "og:title", content: "Aurelin — German-Engineered uPVC Windows & Doors" },
-      { property: "og:description", content: "Premium uPVC windows and doors crafted with German precision for modern living." },
+      { property: "og:title", content: "TEST" },
+      { property: "og:description", content: "TEST" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Aurelin" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "TEST" },
+      { name: "twitter:description", content: "TEST" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4f13a590-2da0-4c3e-af8a-83ffb104f131/id-preview-45e26d49--f7b01652-d353-48ed-8494-7a2509a1ff05.lovable.app-1781783028897.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4f13a590-2da0-4c3e-af8a-83ffb104f131/id-preview-45e26d49--f7b01652-d353-48ed-8494-7a2509a1ff05.lovable.app-1781783028897.png" },
     ],
     links: [
       {
