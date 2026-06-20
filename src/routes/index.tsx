@@ -45,26 +45,26 @@ function Index() {
         <img src={heroVilla} alt="Luxury villa with full-height uPVC sliding doors at dusk" className="absolute inset-0 size-full object-cover" width={1920} height={1280} />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/40 to-ink" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/20 to-transparent" />
-        <div className="relative mx-auto max-w-7xl px-6 pt-44 pb-28 lg:pt-56 lg:pb-40">
+        <div className="relative mx-auto max-w-7xl px-6 pt-32 pb-16 sm:pt-44 sm:pb-28 lg:pt-56 lg:pb-40">
           <div className="max-w-3xl animate-fade-in">
             <Eyebrow>German Engineering · Crafted in India</Eyebrow>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-semibold leading-[1.02] text-balance">
+            <h1 className="mt-6 text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-semibold leading-[1.02] text-balance">
               German Engineering.<br />
               <span className="bg-gradient-to-r from-white via-platinum to-white/60 bg-clip-text text-transparent">Crafted for Modern Living.</span>
             </h1>
-            <p className="mt-7 max-w-xl text-lg md:text-xl text-white/80 text-balance">
+            <p className="mt-6 max-w-xl text-base sm:text-lg md:text-xl text-white/80 text-balance">
               Whisper-quiet sliding systems. Tilt & turn precision. Façade-scale openings. Every Aurelin profile is engineered to perform for decades — and disappear into your architecture.
             </p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="rounded-full px-7 h-13 text-base shadow-[var(--shadow-glow)]">
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild size="lg" className="rounded-full px-6 sm:px-7 h-12 sm:h-13 text-sm sm:text-base shadow-[var(--shadow-glow)]">
                 <Link to="/products">Explore Products <ArrowRight className="ml-1 size-4" /></Link>
               </Button>
-              <Button onClick={() => open()} variant="outline" size="lg" className="rounded-full px-7 h-13 text-base bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white">
+              <Button onClick={() => open()} variant="outline" size="lg" className="rounded-full px-6 sm:px-7 h-12 sm:h-13 text-sm sm:text-base bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white">
                 Get Free Consultation
               </Button>
             </div>
           </div>
-          <div className="absolute bottom-10 left-6 right-6 lg:left-auto lg:right-10 lg:bottom-10 grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-3xl">
+          <div className="mt-12 grid grid-cols-2 gap-3 max-w-3xl lg:absolute lg:mt-0 lg:left-auto lg:right-10 lg:bottom-10 lg:grid-cols-4">
             {[
               { k: "0.7", u: "W/m²K U-Value" },
               { k: "48 dB", u: "Acoustic Reduction" },
@@ -72,7 +72,7 @@ function Index() {
               { k: "25 yr", u: "Profile Warranty" },
             ].map((s) => (
               <div key={s.u} className="glass-panel rounded-xl px-4 py-3">
-                <div className="text-2xl font-display font-semibold">{s.k}</div>
+                <div className="text-xl sm:text-2xl font-display font-semibold">{s.k}</div>
                 <div className="text-[11px] uppercase tracking-wider text-white/60">{s.u}</div>
               </div>
             ))}
