@@ -44,10 +44,10 @@ function Contact() {
         </form>
         <aside className="lg:col-span-2 space-y-4">
           {[
-            { Icon: Phone, t: "Call us", d: "+91 99999 99999", href: "tel:+919999999999" },
-            { Icon: MessageCircle, t: "WhatsApp", d: "Chat with a specialist", href: "https://wa.me/919999999999" },
-            { Icon: Mail, t: "Email", d: "studio@YKS Technologies.example", href: "mailto:studio@YKS Technologies.example" },
-            { Icon: MapPin, t: "Studio", d: "YKS Technologies Atelier, Lower Parel, Mumbai", href: "#" },
+            { Icon: Phone, t: "Call us", d: "+917775888747", href: "tel:+917775888747" },
+            { Icon: MessageCircle, t: "WhatsApp", d: "Chat with a specialist", href: "https://wa.me/917775888747" },
+            { Icon: Mail, t: "Email", d: "support@ykstechnologies.com", href: "mailto:support@ykstechnologies.com" },
+            { Icon: MapPin, t: "Studio", d: "YKS Technologies, Chh. Sambhaji Nagar", href: "#" },
           ].map(({ Icon, t, d, href }) => (
             <a key={t} href={href} className="block rounded-2xl border border-border/60 p-5 hover:bg-card/60 transition-colors">
               <div className="flex items-center gap-4"><div className="size-10 rounded-lg bg-azure/15 text-azure grid place-items-center"><Icon className="size-5" /></div><div><div className="font-display font-semibold">{t}</div><div className="text-sm text-muted-foreground">{d}</div></div></div>
