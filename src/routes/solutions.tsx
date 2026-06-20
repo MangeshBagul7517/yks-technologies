@@ -9,9 +9,9 @@ import hero from "@/assets/hero-villa.jpg";
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions — uPVC Systems for Every Envelope | Aurelin" },
-      { name: "description", content: "Aurelin uPVC solutions for villas, luxury apartments, hospitality, healthcare, education and commercial projects." },
-      { property: "og:title", content: "Solutions — Aurelin" },
+      { title: "Solutions — uPVC Systems for Every Envelope | YKS Technologies" },
+      { name: "description", content: "YKS Technologies uPVC solutions for villas, luxury apartments, hospitality, healthcare, education and commercial projects." },
+      { property: "og:title", content: "Solutions — YKS Technologies" },
       { property: "og:description", content: "Engineered fenestration for every architectural envelope." },
       { property: "og:url", content: "/solutions" },
     ],
@@ -34,7 +34,7 @@ const items = [
 function Solutions() {
   return (
     <div className="mx-auto max-w-7xl px-6 py-16">
-      <SectionHeader eyebrow="Solutions" title="Engineered for every envelope." lead="From single villas to entire towers — Aurelin specifies, fabricates and installs as one accountable partner." />
+      <SectionHeader eyebrow="Solutions" title="Engineered for every envelope." lead="From single villas to entire towers — YKS Technologies specifies, fabricates and installs as one accountable partner." />
       <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {items.map((s) => (
           <Link key={s.t} to="/contact" className="group relative overflow-hidden rounded-2xl border border-border/60">

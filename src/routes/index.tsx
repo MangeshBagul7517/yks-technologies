@@ -14,9 +14,9 @@ import liftSlide from "@/assets/lift-slide.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aurelin — German-Engineered uPVC Windows & Doors" },
+      { title: "YKS Technologies — German-Engineered uPVC Windows & Doors" },
       { name: "description", content: "Premium uPVC windows and doors crafted with German precision. Energy efficient, sound insulating, weather resistant systems for villas, apartments and architectural projects." },
-      { property: "og:title", content: "Aurelin — German-Engineered uPVC Windows & Doors" },
+      { property: "og:title", content: "YKS Technologies — German-Engineered uPVC Windows & Doors" },
       { property: "og:description", content: "Premium uPVC windows and doors crafted with German precision for modern living." },
       { property: "og:url", content: "/" },
     ],
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "Aurelin",
+        name: "YKS Technologies",
         description: "German-engineered uPVC windows and doors for premium residential and architectural projects.",
         url: "/",
       }),
@@ -53,7 +53,7 @@ function Index() {
               <span className="bg-gradient-to-r from-white via-platinum to-white/60 bg-clip-text text-transparent">Crafted for Modern Living.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base sm:text-lg md:text-xl text-white/80 text-balance">
-              Whisper-quiet sliding systems. Tilt & turn precision. Façade-scale openings. Every Aurelin profile is engineered to perform for decades — and disappear into your architecture.
+              Whisper-quiet sliding systems. Tilt & turn precision. Façade-scale openings. Every YKS Technologies profile is engineered to perform for decades — and disappear into your architecture.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full px-6 sm:px-7 h-12 sm:h-13 text-sm sm:text-base shadow-[var(--shadow-glow)]">
@@ -119,7 +119,7 @@ function Index() {
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-28 grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <Eyebrow>The Aurelin Profile</Eyebrow>
+            <Eyebrow>The YKS Technologies Profile</Eyebrow>
             <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-display font-semibold text-balance">82 mm. Seven chambers. <span className="text-muted-foreground">One obsession.</span></h2>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">A cross-section the German engineers will recognise. Co-extruded EPDM gaskets, warm-edge spacers and a galvanised steel core — wrapped in a class-A surface finish that resists UV, weather and time.</p>
             <div className="mt-8 grid grid-cols-2 gap-5 max-w-md">
@@ -162,7 +162,7 @@ function Index() {
       {/* SOLUTIONS BAND */}
       <section className="relative">
         <div className="mx-auto max-w-7xl px-6 py-28">
-          <SectionHeader eyebrow="Solutions" title="Engineered for every envelope." lead="From private villas to towers and hospitality — Aurelin specifies, fabricates and installs as one accountable partner." />
+          <SectionHeader eyebrow="Solutions" title="Engineered for every envelope." lead="From private villas to towers and hospitality — YKS Technologies specifies, fabricates and installs as one accountable partner." />
           <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { t: "Villas", img: villa },
@@ -187,7 +187,7 @@ function Index() {
       <section className="mx-auto max-w-5xl px-6 py-28 text-center">
         <Eyebrow>Specified by</Eyebrow>
         <blockquote className="mt-8 text-3xl md:text-4xl lg:text-5xl font-display font-medium leading-tight text-balance">
-          "The lift-and-slide system disappears into the wall. Three metres of glass, moved with one finger. Aurelin delivered exactly what the drawings promised — and then some."
+          "The lift-and-slide system disappears into the wall. Three metres of glass, moved with one finger. YKS Technologies delivered exactly what the drawings promised — and then some."
         </blockquote>
         <div className="mt-8 text-sm text-muted-foreground">Ar. Meera Iyengar · Principal, Studio Verde</div>
       </section>

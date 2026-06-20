@@ -12,8 +12,8 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Premium uPVC Windows & Doors | Aurelin" },
-      { name: "description", content: "Browse the Aurelin gallery of installed uPVC windows, doors and façade systems across villas, apartments and commercial projects." },
+      { title: "Gallery — Premium uPVC Windows & Doors | YKS Technologies" },
+      { name: "description", content: "Browse the YKS Technologies gallery of installed uPVC windows, doors and façade systems across villas, apartments and commercial projects." },
       { property: "og:url", content: "/gallery" },
     ],
     links: [{ rel: "canonical", href: "/gallery" }],
@@ -40,7 +40,7 @@ function Gallery() {
   const list = filter === "All" ? items : items.filter((i) => i.tag.includes(filter));
   return (
     <div className="mx-auto max-w-7xl px-6 py-16">
-      <SectionHeader eyebrow="Gallery" title="Installed. Inhabited. Loved." lead="A curated selection of completed Aurelin installations." />
+      <SectionHeader eyebrow="Gallery" title="Installed. Inhabited. Loved." lead="A curated selection of completed YKS Technologies installations." />
       <div className="mt-10 flex flex-wrap gap-2">
         {tags.map((t) => (
           <button key={t} onClick={() => setFilter(t)} className={`px-4 h-10 rounded-full text-sm border transition-all ${filter === t ? "bg-foreground text-background border-foreground" : "border-border/60 text-muted-foreground hover:text-foreground"}`}>{t}</button>

@@ -5,7 +5,7 @@ import { Shield, Volume2, Wind, Zap, Leaf, Award, Sparkles, Flame, Sun, Droplets
 export const Route = createFileRoute("/why-upvc")({
   head: () => ({
     meta: [
-      { title: "Why uPVC Windows & Doors — Aurelin" },
+      { title: "Why uPVC Windows & Doors — YKS Technologies" },
       { name: "description", content: "Why German-engineered uPVC outperforms wood and aluminium: energy efficiency, acoustic insulation, weather resistance and decades of low-maintenance performance." },
       { property: "og:url", content: "/why-upvc" },
     ],
@@ -32,7 +32,7 @@ const reasons = [
 function Why() {
   return (
     <div className="mx-auto max-w-7xl px-6 py-16">
-      <SectionHeader eyebrow="Why Aurelin uPVC" title="Twelve reasons it lasts longer than the wall around it." lead="Aurelin profiles are engineered to outlast paint cycles, weather cycles and ownership cycles." />
+      <SectionHeader eyebrow="Why YKS Technologies uPVC" title="Twelve reasons it lasts longer than the wall around it." lead="YKS Technologies profiles are engineered to outlast paint cycles, weather cycles and ownership cycles." />
       <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {reasons.map(({ Icon, t, d }) => (
           <div key={t} className="rounded-2xl border border-border/60 p-6 bg-card/30 hover:bg-card/60 transition-colors">

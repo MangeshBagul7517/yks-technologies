@@ -6,9 +6,9 @@ import profile from "@/assets/profile-detail.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Aurelin — German Engineering, Crafted in India" },
-      { name: "description", content: "Aurelin manufactures premium uPVC window and door systems with German engineering, European hardware and concierge service for architectural projects." },
-      { property: "og:title", content: "About Aurelin" },
+      { title: "About YKS Technologies — German Engineering, Crafted in India" },
+      { name: "description", content: "YKS Technologies manufactures premium uPVC window and door systems with German engineering, European hardware and concierge service for architectural projects." },
+      { property: "og:title", content: "About YKS Technologies" },
       { property: "og:description", content: "German engineering. Crafted for modern living." },
       { property: "og:url", content: "/about" },
     ],
@@ -26,13 +26,13 @@ function About() {
         <div className="relative mx-auto max-w-5xl px-6 pt-24 pb-32 text-center">
           <Eyebrow>Our Story</Eyebrow>
           <h1 className="mt-6 text-5xl md:text-7xl font-display font-semibold text-balance">A quiet obsession with how a window opens.</h1>
-          <p className="mt-6 text-xl text-white/80 max-w-2xl mx-auto text-balance">Aurelin was founded by engineers and architects who refused to accept that premium fenestration had to be imported, expensive or compromised.</p>
+          <p className="mt-6 text-xl text-white/80 max-w-2xl mx-auto text-balance">YKS Technologies was founded by engineers and architects who refused to accept that premium fenestration had to be imported, expensive or compromised.</p>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-28 grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <SectionHeader eyebrow="The Aurelin Standard" title="Engineering before aesthetics. Both, without compromise." lead="Every Aurelin profile is extruded on German lines, reinforced with galvanised steel, and sealed with co-extruded EPDM — the same standards applied in Berlin and Mumbai." />
+          <SectionHeader eyebrow="The YKS Technologies Standard" title="Engineering before aesthetics. Both, without compromise." lead="Every YKS Technologies profile is extruded on German lines, reinforced with galvanised steel, and sealed with co-extruded EPDM — the same standards applied in Berlin and Mumbai." />
         </div>
         <img src={profile} alt="Profile detail" loading="lazy" className="rounded-2xl border border-border/60" />
       </section>

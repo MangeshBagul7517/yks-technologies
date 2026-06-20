@@ -31,7 +31,7 @@ export function Nav() {
         <div className={`flex items-center justify-between rounded-2xl px-4 sm:px-6 py-3 transition-all duration-500 ${scrolled ? "glass-panel shadow-[var(--shadow-luxury)]" : ""}`}>
           <Link to="/" className="flex items-center gap-2 font-display font-bold text-lg tracking-tight">
             <span className="inline-block size-2.5 rounded-full bg-azure shadow-[var(--shadow-glow)]" />
-            <span>AURELIN</span>
+            <span>YKS Technologies</span>
           </Link>
           <nav className="hidden lg:flex items-center gap-7 text-sm text-muted-foreground">
             {links.map((l) => (

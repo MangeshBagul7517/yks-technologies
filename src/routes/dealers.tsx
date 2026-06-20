@@ -9,8 +9,8 @@ import { MapPin } from "lucide-react";
 export const Route = createFileRoute("/dealers")({
   head: () => ({
     meta: [
-      { title: "Partner Network — Dealers, Fabricators & Architects | Aurelin" },
-      { name: "description", content: "Locate an Aurelin dealer, fabricator or architect partner — or apply to join our authorised network." },
+      { title: "Partner Network — Dealers, Fabricators & Architects | YKS Technologies" },
+      { name: "description", content: "Locate an YKS Technologies dealer, fabricator or architect partner — or apply to join our authorised network." },
       { property: "og:url", content: "/dealers" },
     ],
     links: [{ rel: "canonical", href: "/dealers" }],
@@ -38,7 +38,7 @@ function Dealers() {
         </div>
         <div>
           <h3 className="text-xl font-display font-semibold">Become a partner</h3>
-          <p className="mt-2 text-sm text-muted-foreground">Apply to join the Aurelin authorised network. We evaluate dealers, fabricators and architect studios.</p>
+          <p className="mt-2 text-sm text-muted-foreground">Apply to join the YKS Technologies authorised network. We evaluate dealers, fabricators and architect studios.</p>
           <form onSubmit={(e) => e.preventDefault()} className="mt-6 space-y-4 rounded-2xl border border-border/60 p-6">
             <div className="grid grid-cols-2 gap-3"><div><Label>Company</Label><Input required /></div><div><Label>Contact</Label><Input required /></div></div>
             <div className="grid grid-cols-2 gap-3"><div><Label>Email</Label><Input type="email" required /></div><div><Label>Phone</Label><Input required /></div></div>

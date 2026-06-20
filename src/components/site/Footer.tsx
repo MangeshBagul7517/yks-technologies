@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2 space-y-5">
             <div className="flex items-center gap-2 font-display font-bold text-xl">
-              <span className="inline-block size-2.5 rounded-full bg-azure" />AURELIN
+              <span className="inline-block size-2.5 rounded-full bg-azure" />YKS Technologies
             </div>
             <p className="text-sm text-muted-foreground max-w-sm">German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex gap-2 max-w-sm">
@@ -34,7 +34,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-16 flex flex-col sm:flex-row justify-between gap-4 text-xs text-muted-foreground border-t border-border/60 pt-8">
-          <div>© {new Date().getFullYear()} Aurelin Systems. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} YKS Technologies Systems. All rights reserved.</div>
           <div className="flex gap-6"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Warranty</a></div>
         </div>
       </div>

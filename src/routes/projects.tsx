@@ -9,8 +9,8 @@ import folding from "@/assets/folding-door.jpg";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Featured Installations | Aurelin" },
-      { name: "description", content: "Featured Aurelin projects across residential, commercial and hospitality sectors — engineered, fabricated and installed by one accountable partner." },
+      { title: "Projects — Featured Installations | YKS Technologies" },
+      { name: "description", content: "Featured YKS Technologies projects across residential, commercial and hospitality sectors — engineered, fabricated and installed by one accountable partner." },
       { property: "og:url", content: "/projects" },
     ],
     links: [{ rel: "canonical", href: "/projects" }],

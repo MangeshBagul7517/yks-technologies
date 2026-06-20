@@ -10,7 +10,7 @@ import profile from "@/assets/profile-detail.jpg";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Insights — uPVC Windows & Doors | Aurelin" },
+      { title: "Insights — uPVC Windows & Doors | YKS Technologies" },
       { name: "description", content: "Expert guides on uPVC windows and doors: sound insulation, energy efficiency, villa design and sustainable building materials." },
       { property: "og:url", content: "/blog" },
     ],
@@ -31,7 +31,7 @@ const posts = [
 function Blog() {
   return (
     <div className="mx-auto max-w-7xl px-6 py-16">
-      <SectionHeader eyebrow="Insights" title="Field notes from a fenestration studio." lead="Guides, opinions and engineering deep-dives from the Aurelin atelier." />
+      <SectionHeader eyebrow="Insights" title="Field notes from a fenestration studio." lead="Guides, opinions and engineering deep-dives from the YKS Technologies atelier." />
       <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {posts.map((p, i) => (
           <Link key={i} to="/blog" className="group rounded-2xl overflow-hidden border border-border/60 bg-card/30">

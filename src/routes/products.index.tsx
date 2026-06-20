@@ -9,9 +9,9 @@ import { useEnquiry } from "@/components/site/EnquiryDialog";
 export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
-      { title: "uPVC Windows & Doors Collection — Aurelin" },
-      { name: "description", content: "Explore the complete Aurelin collection of German-engineered uPVC windows, doors and large-opening systems for villas, apartments and commercial projects." },
-      { property: "og:title", content: "uPVC Windows & Doors Collection — Aurelin" },
+      { title: "uPVC Windows & Doors Collection — YKS Technologies" },
+      { name: "description", content: "Explore the complete YKS Technologies collection of German-engineered uPVC windows, doors and large-opening systems for villas, apartments and commercial projects." },
+      { property: "og:title", content: "uPVC Windows & Doors Collection — YKS Technologies" },
       { property: "og:description", content: "Sliding, casement, tilt & turn, lift & slide, folding and bespoke uPVC systems." },
       { property: "og:url", content: "/products" },
     ],

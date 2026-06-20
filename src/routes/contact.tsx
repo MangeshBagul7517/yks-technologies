@@ -10,8 +10,8 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Aurelin — Premium uPVC Windows & Doors" },
-      { name: "description", content: "Book a free consultation with an Aurelin specialist for your villa, apartment or architectural project. We respond within 24 hours." },
+      { title: "Contact YKS Technologies — Premium uPVC Windows & Doors" },
+      { name: "description", content: "Book a free consultation with an YKS Technologies specialist for your villa, apartment or architectural project. We respond within 24 hours." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -20,9 +20,9 @@ export const Route = createFileRoute("/contact")({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        name: "Aurelin",
+        name: "YKS Technologies",
         telephone: "+91 99999 99999",
-        email: "studio@aurelin.example",
+        email: "studio@YKS Technologies.example",
       }),
     }],
   }),
@@ -46,8 +46,8 @@ function Contact() {
           {[
             { Icon: Phone, t: "Call us", d: "+91 99999 99999", href: "tel:+919999999999" },
             { Icon: MessageCircle, t: "WhatsApp", d: "Chat with a specialist", href: "https://wa.me/919999999999" },
-            { Icon: Mail, t: "Email", d: "studio@aurelin.example", href: "mailto:studio@aurelin.example" },
-            { Icon: MapPin, t: "Studio", d: "Aurelin Atelier, Lower Parel, Mumbai", href: "#" },
+            { Icon: Mail, t: "Email", d: "studio@YKS Technologies.example", href: "mailto:studio@YKS Technologies.example" },
+            { Icon: MapPin, t: "Studio", d: "YKS Technologies Atelier, Lower Parel, Mumbai", href: "#" },
           ].map(({ Icon, t, d, href }) => (
             <a key={t} href={href} className="block rounded-2xl border border-border/60 p-5 hover:bg-card/60 transition-colors">
               <div className="flex items-center gap-4"><div className="size-10 rounded-lg bg-azure/15 text-azure grid place-items-center"><Icon className="size-5" /></div><div><div className="font-display font-semibold">{t}</div><div className="text-sm text-muted-foreground">{d}</div></div></div>

@@ -13,12 +13,12 @@ export const Route = createFileRoute("/products/$slug")({
   },
   head: ({ loaderData }) => {
     const p = loaderData?.product;
-    if (!p) return { meta: [{ title: "Product — Aurelin" }] };
+    if (!p) return { meta: [{ title: "Product — YKS Technologies" }] };
     return {
       meta: [
-        { title: `${p.name} — Premium uPVC ${p.category} | Aurelin` },
+        { title: `${p.name} — Premium uPVC ${p.category} | YKS Technologies` },
         { name: "description", content: `${p.name}: ${p.tagline} ${p.overview}` },
-        { property: "og:title", content: `${p.name} — Aurelin` },
+        { property: "og:title", content: `${p.name} — YKS Technologies` },
         { property: "og:description", content: p.tagline },
         { property: "og:image", content: p.image },
         { property: "og:type", content: "product" },
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/products/$slug")({
           name: p.name,
           description: p.overview,
           category: p.category,
-          brand: { "@type": "Brand", name: "Aurelin" },
+          brand: { "@type": "Brand", name: "YKS Technologies" },
         }),
       }],
     };
