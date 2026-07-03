@@ -103,7 +103,7 @@ function Index() {
             { Icon: Shield, t: "Multi-Point Security", d: "European hardware with anti-lift catches and laminated security glass." },
             { Icon: Leaf, t: "Lead-Free Profiles", d: "Calcium-zinc stabilised, REACH-compliant compounds — safe for families." },
             { Icon: Sparkles, t: "Designer Finishes", d: "40+ veneer, foil and lacquer finishes — colour-matched to your architecture." },
-            { Icon: Award, t: "25-Year Warranty", d: "Profile warranty backed by a single-source manufacturer and concierge service." },
+            { Icon: Award, t: "15-Year Warranty", d: "Profile warranty backed by a single-source manufacturer and concierge service." },
             { Icon: ArrowUpRight, t: "Low Maintenance", d: "UV stable, non-corroding, non-warping — engineered for a lifetime of zero fuss." },
           ].map(({ Icon, t, d }, i) => (
             <div key={t} className="group relative rounded-2xl border border-border/60 bg-card/40 p-6 hover:bg-card/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-[var(--shadow-luxury)]" style={{ animationDelay: `${i * 60}ms` }}>
