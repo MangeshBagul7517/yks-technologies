@@ -38,10 +38,9 @@ function About() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {[
             { k: "20+", v: "Years of fenestration engineering" },
-            { k: "1,200+", v: "Residential & architectural projects" },
             { k: "12", v: "Cities served across India & GCC" },
           ].map((s) => (
             <div key={s.v} className="rounded-2xl border border-border/60 p-8">
@@ -50,26 +49,6 @@ function About() {
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-20">
-        <SectionHeader eyebrow="Timeline" title="Two decades of quiet progress." />
-        <ol className="mt-12 relative border-l border-border/60 ml-3">
-          {[
-            ["2003", "First extrusion line commissioned for residential profiles."],
-            ["2009", "Partnership with European hardware manufacturers established."],
-            ["2014", "Acoustic systems division launched for metro residences."],
-            ["2019", "Lift & slide and folding systems for luxury villas."],
-            ["2023", "82 mm passive-house grade profile released."],
-            ["2026", "Concierge installation network expands to GCC."],
-          ].map(([y, t]) => (
-            <li key={y} className="ml-6 mb-10">
-              <div className="absolute -left-[7px] size-3.5 rounded-full bg-azure" />
-              <div className="text-azure font-display font-semibold">{y}</div>
-              <div className="mt-1 text-lg">{t}</div>
-            </li>
-          ))}
-        </ol>
       </section>
     </div>
   );
