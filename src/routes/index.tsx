@@ -47,7 +47,7 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/20 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-6 pt-32 pb-16 sm:pt-44 sm:pb-28 lg:pt-56 lg:pb-40">
           <div className="max-w-3xl animate-fade-in">
-            <Eyebrow>Gealan Authorised - German Engineering · Crafted in India</Eyebrow>
+            <Eyebrow>Gealan Authorised Fabricator - German Engineering · Crafted in India</Eyebrow>
             <h1 className="mt-6 text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-semibold leading-[1.02] text-balance">
               German Engineering.<br />
               <span className="bg-gradient-to-r from-white via-platinum to-white/60 bg-clip-text text-transparent">Crafted for Modern Living.</span>
