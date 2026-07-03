@@ -15,6 +15,6 @@ export const brochures: Brochure[] = [
   {
     title: "Tech Catalogue - Gelan",
     description: "Profiles, glazing, hardware and certified performance data.",
-    url: "https://drive.google.com/file/d/REPLACE_WITH_FILE_ID/view",
+    url: "https://drive.google.com/file/d/17_kjK6xKKttLEXbeIVc4bYsUIkKAu0Qq/view?usp=drive_link",
   },
 ];
