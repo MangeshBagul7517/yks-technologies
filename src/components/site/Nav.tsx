@@ -11,7 +11,6 @@ const links = [
   { to: "/gallery", label: "Gallery" },
   { to: "/projects", label: "Projects" },
   { to: "/why-upvc", label: "Why uPVC" },
-  { to: "/dealers", label: "Partners" },
   { to: "/about", label: "About" },
 ] as const;
 

@@ -17,7 +17,7 @@ export function Footer() {
           </div>
           {[
             { title: "Products", items: [["Sliding Windows","/products/sliding-windows"],["Tilt & Turn","/products/tilt-turn-windows"],["Lift & Slide","/products/lift-slide-doors"],["Folding Doors","/products/folding-doors"],["All Products","/products"]] },
-            { title: "Company", items: [["About","/about"],["Projects","/projects"],["Partners","/dealers"],["Careers","/careers"]] },
+            { title: "Company", items: [["About","/about"],["Projects","/projects"],["Partners","/dealers"]] },
             { title: "Resources", items: [["Gallery","/gallery"],["Why uPVC","/why-upvc"],["FAQs","/faq"],["Contact","/contact"]] },
           ].map((col) => (
             <div key={col.title}>
