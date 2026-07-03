@@ -3,17 +3,17 @@ export type Brochure = { title: string; description: string; url: string };
 
 export const brochures: Brochure[] = [
   {
-    title: "Windows Collection",
+    title: "Brochure",
     description: "Complete catalogue of sliding, casement and tilt & turn systems.",
-    url: "https://drive.google.com/file/d/REPLACE_WITH_FILE_ID/view",
+    url: "https://drive.google.com/file/d/1LXMJ7of5NuisLWdKvV2rYqcqO1p4qvMc/view?usp=sharing",
   },
   {
-    title: "Doors Collection",
-    description: "Lift & slide, folding and entrance door systems.",
-    url: "https://drive.google.com/file/d/REPLACE_WITH_FILE_ID/view",
+    title: "GEALAN Test Report - 2026",
+    description: "",
+    url: "https://drive.google.com/file/d/1fQ904FO48QrLvjJgoallmWWDtKyaqg5Y/view?usp=drive_link",
   },
   {
-    title: "Technical & Performance",
+    title: "Tech Catalogue - Gelan",
     description: "Profiles, glazing, hardware and certified performance data.",
     url: "https://drive.google.com/file/d/REPLACE_WITH_FILE_ID/view",
   },
