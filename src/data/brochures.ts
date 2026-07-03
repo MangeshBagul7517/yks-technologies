@@ -4,7 +4,7 @@ export type Brochure = { title: string; description: string; url: string };
 export const brochures: Brochure[] = [
   {
     title: "Gelan Brochure",
-    description: "Complete catalogue of sliding, casement and tilt & turn systems.",
+    description: "",
     url: "https://drive.google.com/file/d/1LXMJ7of5NuisLWdKvV2rYqcqO1p4qvMc/view?usp=sharing",
   },
   {
