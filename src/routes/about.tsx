@@ -40,7 +40,12 @@ function About() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid md:grid-cols-2 gap-4">
           {[
+<<<<<<< Updated upstream
             { k: "20+", v: "Years of fenestration engineering" },
+=======
+            { k: "2+", v: "Years of fenestration engineering" },
+            { k: "1,200+", v: "Residential & architectural projects" },
+>>>>>>> Stashed changes
             { k: "12", v: "Cities served across India & GCC" },
           ].map((s) => (
             <div key={s.v} className="rounded-2xl border border-border/60 p-8">
