@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (

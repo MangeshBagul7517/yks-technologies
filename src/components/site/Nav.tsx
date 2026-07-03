@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnquiry } from "./EnquiryDialog";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/products", label: "Products" },

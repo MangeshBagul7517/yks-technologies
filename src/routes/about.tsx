@@ -41,7 +41,7 @@ function About() {
         <div className="grid md:grid-cols-2 gap-4">
           {[
             { k: "2+", v: "Years of fenestration engineering" },
-            { k: "12", v: "Cities served across India & GCC" },
+            { k: "12", v: "Cities served across India" },
           ].map((s) => (
             <div key={s.v} className="rounded-2xl border border-border/60 p-8">
               <div className="text-5xl font-display font-semibold">{s.k}</div>
