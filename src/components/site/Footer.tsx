@@ -13,7 +13,7 @@ export function Footer() {
             <Link to="/" aria-label="YKS Technologies" className="inline-flex">
               <img src={logo} alt="YKS Technologies" className="h-11 w-auto" />
             </Link>
-            <p className="text-sm text-muted-foreground max-w-sm">German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
+            <p className="text-sm text-muted-foreground max-w-sm">Gealan Authorised - German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
           </div>
           {[
             { title: "Products", items: [["Sliding Windows","/products/sliding-windows"],["Tilt & Turn","/products/tilt-turn-windows"],["Lift & Slide","/products/lift-slide-doors"],["Folding Doors","/products/folding-doors"],["All Products","/products"]] },
