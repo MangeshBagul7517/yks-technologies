@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.svg";
 
 export function Footer() {
   return (
@@ -9,9 +10,9 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2 space-y-5">
-            <div className="flex items-center gap-2 font-display font-bold text-xl">
-              <span className="inline-block size-2.5 rounded-full bg-azure" />YKS Technologies
-            </div>
+            <Link to="/" aria-label="YKS Technologies" className="inline-flex">
+              <img src={logo} alt="YKS Technologies" className="h-11 w-auto" />
+            </Link>
             <p className="text-sm text-muted-foreground max-w-sm">German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex gap-2 max-w-sm">
               <Input placeholder="Your email" className="bg-white/5 border-white/10" />
