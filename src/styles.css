@@ -166,9 +166,9 @@
 }
 
 @utility glass-panel {
-  background: oklch(1 0 0 / 0.04);
-  border: 1px solid oklch(1 0 0 / 0.08);
-  backdrop-filter: blur(20px) saturate(140%);
+  background: oklch(0.145 0.01 260 / 0.55);
+  border: 1px solid oklch(1 0 0 / 0.10);
+  backdrop-filter: blur(24px) saturate(160%);
 }
 @utility text-balance {
   text-wrap: balance;
