@@ -3,7 +3,7 @@ export type Brochure = { title: string; description: string; url: string };
 
 export const brochures: Brochure[] = [
   {
-    title: "Brochure",
+    title: "Gelan Brochure",
     description: "Complete catalogue of sliding, casement and tilt & turn systems.",
     url: "https://drive.google.com/file/d/1LXMJ7of5NuisLWdKvV2rYqcqO1p4qvMc/view?usp=sharing",
   },
@@ -14,7 +14,7 @@ export const brochures: Brochure[] = [
   },
   {
     title: "Tech Catalogue - Gelan",
-    description: "Profiles, glazing, hardware and certified performance data.",
+    description: "",
     url: "https://drive.google.com/file/d/17_kjK6xKKttLEXbeIVc4bYsUIkKAu0Qq/view?usp=drive_link",
   },
 ];
