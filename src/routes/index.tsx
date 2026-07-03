@@ -69,7 +69,7 @@ function Index() {
               { k: "0.7", u: "W/m²K U-Value" },
               { k: "48 dB", u: "Acoustic Reduction" },
               { k: "C5", u: "Wind Load Class" },
-              { k: "25 yr", u: "Profile Warranty" },
+              { k: "15 yr", u: "Profile Warranty" },
             ].map((s) => (
               <div key={s.u} className="glass-panel rounded-xl px-4 py-3">
                 <div className="text-xl sm:text-2xl font-display font-semibold">{s.k}</div>
@@ -85,7 +85,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6 py-8 flex flex-wrap items-center justify-between gap-6">
           <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Specified by leading architects across</div>
           <div className="flex flex-wrap gap-x-10 gap-y-3 text-sm font-display font-semibold text-foreground/70">
-            {["Mumbai","Bengaluru","Delhi NCR","Goa","Hyderabad","Pune","Dubai","Colombo"].map((c) => (
+            {["Chh. SambhajiNagar","Ahilyanagar","Nashik","Shirdi","Dhule","Jalgaon","Amravati","Jalna"].map((c) => (
               <span key={c}>{c}</span>
             ))}
           </div>

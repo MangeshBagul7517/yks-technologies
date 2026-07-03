@@ -61,7 +61,6 @@ function ProductPage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Button onClick={() => open(p.name)} size="lg" className="rounded-full px-7 h-13">Request Quote</Button>
             <Button onClick={() => open(p.name)} size="lg" variant="outline" className="rounded-full px-7 h-13 bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white">Schedule Consultation</Button>
-            <Button variant="ghost" size="lg" className="rounded-full px-5 h-13 text-white"><Download className="mr-2 size-4" />Brochure</Button>
           </div>
         </div>
       </section>
@@ -131,7 +130,6 @@ function ProductPage() {
             <div className="mt-5 space-y-2">
               <Button onClick={() => open(p.name)} className="w-full" size="lg">Enquire Now</Button>
               <Button onClick={() => open(p.name)} variant="outline" className="w-full" size="lg">Request Call Back</Button>
-              <Button variant="ghost" className="w-full"><Download className="mr-2 size-4" /> Download Brochure</Button>
             </div>
           </div>
         </aside>

@@ -21,7 +21,7 @@ export function Footer() {
           {[
             { title: "Products", items: [["Sliding Windows","/products/sliding-windows"],["Tilt & Turn","/products/tilt-turn-windows"],["Lift & Slide","/products/lift-slide-doors"],["Folding Doors","/products/folding-doors"],["All Products","/products"]] },
             { title: "Company", items: [["About","/about"],["Projects","/projects"],["Partners","/dealers"],["Careers","/careers"]] },
-            { title: "Resources", items: [["Insights","/blog"],["Gallery","/gallery"],["Why uPVC","/why-upvc"],["FAQs","/faq"],["Contact","/contact"]] },
+            { title: "Resources", items: [["Gallery","/gallery"],["Why uPVC","/why-upvc"],["FAQs","/faq"],["Contact","/contact"]] },
           ].map((col) => (
             <div key={col.title}>
               <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">{col.title}</div>
