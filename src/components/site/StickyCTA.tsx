@@ -1,16 +1,17 @@
-import { MessageCircle, Phone } from "lucide-react";
-import { useEnquiry } from "./EnquiryDialog";
-
 export function StickyCTA() {
-  const { open } = useEnquiry();
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
-      <a href="https://wa.me/917775888747" target="_blank" rel="noreferrer" className="size-13 grid place-items-center rounded-full bg-[oklch(0.7_0.18_150)] text-white shadow-[var(--shadow-luxury)] hover:scale-105 transition-transform" aria-label="WhatsApp">
-        <MessageCircle className="size-5" />
+    <div className="fixed bottom-5 right-5 z-40">
+      <a
+        href="https://wa.me/917775888747"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="size-14 grid place-items-center rounded-full bg-[#25D366] text-white shadow-[var(--shadow-luxury)] hover:scale-105 transition-transform"
+      >
+        <svg viewBox="0 0 32 32" className="size-7" fill="currentColor" aria-hidden="true">
+          <path d="M19.11 17.27c-.28-.14-1.64-.81-1.9-.9-.25-.09-.44-.14-.62.14-.19.28-.72.9-.88 1.08-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.24-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.46.09-.19.05-.35-.02-.49-.07-.14-.62-1.51-.85-2.06-.22-.54-.45-.47-.62-.48-.16-.01-.35-.01-.53-.01-.19 0-.49.07-.75.35-.26.28-.98.96-.98 2.35 0 1.38 1.01 2.72 1.15 2.91.14.19 1.99 3.04 4.83 4.26.68.29 1.2.46 1.61.59.68.22 1.29.19 1.78.11.54-.08 1.64-.67 1.87-1.31.23-.65.23-1.2.16-1.31-.07-.11-.25-.19-.53-.33zM16.01 3.2C8.94 3.2 3.2 8.94 3.2 16.01c0 2.27.6 4.48 1.73 6.44L3.2 28.8l6.51-1.71a12.75 12.75 0 006.3 1.65h.01c7.07 0 12.81-5.74 12.81-12.81 0-3.42-1.33-6.64-3.75-9.06A12.72 12.72 0 0016.01 3.2zm7.55 20.36a10.55 10.55 0 01-7.55 3.12h-.01a10.62 10.62 0 01-5.4-1.48l-.39-.23-3.86 1.01 1.03-3.76-.25-.4a10.6 10.6 0 01-1.63-5.65c0-5.87 4.78-10.65 10.65-10.65 2.84 0 5.51 1.11 7.52 3.13a10.6 10.6 0 013.13 7.53c0 2.84-1.11 5.51-3.13 7.51z"/>
+        </svg>
       </a>
-      <button onClick={() => open()} className="px-5 h-13 rounded-full bg-azure text-primary-foreground font-medium text-sm shadow-[var(--shadow-glow)] hover:scale-[1.03] transition-transform inline-flex items-center gap-2">
-        <Phone className="size-4" /> Get a Quote
-      </button>
     </div>
   );
 }

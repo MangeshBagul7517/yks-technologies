@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnquiry } from "./EnquiryDialog";
+import logo from "@/assets/logo.svg";
 
 const links = [
   { to: "/products", label: "Products" },
@@ -28,9 +29,8 @@ export function Nav() {
     <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "py-2" : "py-4"}`}>
       <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 transition-all duration-500 ${scrolled ? "" : ""}`}>
         <div className={`flex items-center justify-between rounded-2xl px-4 sm:px-6 py-3 transition-all duration-500 ${scrolled ? "glass-panel shadow-[var(--shadow-luxury)]" : ""}`}>
-          <Link to="/" className="flex items-center gap-2 font-display font-bold text-lg tracking-tight">
-            <span className="inline-block size-2.5 rounded-full bg-azure shadow-[var(--shadow-glow)]" />
-            <span>YKS Technologies</span>
+          <Link to="/" aria-label="YKS Technologies" className="flex items-center">
+            <img src={logo} alt="YKS Technologies" className="h-9 sm:h-10 w-auto" />
           </Link>
           <nav className="hidden lg:flex items-center gap-7 text-sm text-muted-foreground">
             {links.map((l) => (
