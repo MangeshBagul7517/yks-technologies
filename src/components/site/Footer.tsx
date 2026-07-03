@@ -14,10 +14,6 @@ export function Footer() {
               <img src={logo} alt="YKS Technologies" className="h-11 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-sm">German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
-            <form onSubmit={(e) => e.preventDefault()} className="flex gap-2 max-w-sm">
-              <Input placeholder="Your email" className="bg-white/5 border-white/10" />
-              <Button>Subscribe</Button>
-            </form>
           </div>
           {[
             { title: "Products", items: [["Sliding Windows","/products/sliding-windows"],["Tilt & Turn","/products/tilt-turn-windows"],["Lift & Slide","/products/lift-slide-doors"],["Folding Doors","/products/folding-doors"],["All Products","/products"]] },
