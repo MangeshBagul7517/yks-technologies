@@ -5,6 +5,7 @@ import { SectionHeader, Eyebrow } from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useEnquiry } from "@/components/site/EnquiryDialog";
+import { BrochureButton } from "@/components/site/BrochureButton";
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -29,10 +30,13 @@ function ProductsPage() {
   return (
     <div className="mx-auto max-w-7xl px-6 py-16">
       <SectionHeader eyebrow="Collection" title="Every opening, engineered." lead="A complete system of windows, doors and façade-scale openings — each designed to perform for decades." />
-      <div className="mt-10 flex flex-wrap gap-2">
-        {categories.map((c) => (
-          <button key={c} onClick={() => setCat(c)} className={`px-4 h-10 rounded-full text-sm border transition-all ${cat === c ? "bg-foreground text-background border-foreground" : "border-border/60 text-muted-foreground hover:text-foreground"}`}>{c}</button>
-        ))}
+      <div className="mt-10 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-wrap gap-2">
+          {categories.map((c) => (
+            <button key={c} onClick={() => setCat(c)} className={`px-4 h-10 rounded-full text-sm border transition-all ${cat === c ? "bg-foreground text-background border-foreground" : "border-border/60 text-muted-foreground hover:text-foreground"}`}>{c}</button>
+          ))}
+        </div>
+        <BrochureButton variant="outline" />
       </div>
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {list.map((p) => (
