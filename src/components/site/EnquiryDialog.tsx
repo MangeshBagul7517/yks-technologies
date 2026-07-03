@@ -7,7 +7,6 @@ import { Label } from "@/components/ui/label";
 import { useNavigate } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { sendEnquiry } from "@/lib/emailjs";
-import { useState as useReactState } from "react";
 
 type Ctx = { open: (product?: string) => void };
 const EnquiryCtx = createContext<Ctx>({ open: () => {} });
@@ -16,7 +15,7 @@ export const useEnquiry = () => useContext(EnquiryCtx);
 export function EnquiryProvider({ children }: { children: ReactNode }) {
   const [isOpen, setOpen] = useState(false);
   const [product, setProduct] = useState<string | undefined>();
-  const [submitting, setSubmitting] = useReactState(false);
+  const [submitting, setSubmitting] = useState(false);
   const navigate = useNavigate();
   const api = useMemo<Ctx>(() => ({ open: (p) => { setProduct(p); setOpen(true); } }), []);
   const submit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
