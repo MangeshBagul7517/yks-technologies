@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useNavigate } from "@tanstack/react-router";
 import { toast } from "sonner";
+import { sendEnquiry } from "@/lib/emailjs";
+import { useState as useReactState } from "react";
 
 type Ctx = { open: (product?: string) => void };
 const EnquiryCtx = createContext<Ctx>({ open: () => {} });
@@ -14,15 +16,35 @@ export const useEnquiry = () => useContext(EnquiryCtx);
 export function EnquiryProvider({ children }: { children: ReactNode }) {
   const [isOpen, setOpen] = useState(false);
   const [product, setProduct] = useState<string | undefined>();
+  const [submitting, setSubmitting] = useReactState(false);
   const navigate = useNavigate();
   const api = useMemo<Ctx>(() => ({ open: (p) => { setProduct(p); setOpen(true); } }), []);
-  const submit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+  const submit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const data = new FormData(form);
     if (!data.get("name") || !data.get("phone")) { toast.error("Name and phone are required"); return; }
-    setOpen(false);
-    toast.success("Enquiry received. Our specialist will call you within 24 hours.");
-    navigate({ to: "/thank-you" });
+    const payload: Record<string, string> = {
+      name: String(data.get("name") ?? ""),
+      phone: String(data.get("phone") ?? ""),
+      email: String(data.get("email") ?? ""),
+      city: String(data.get("city") ?? ""),
+      product: String(data.get("product") ?? ""),
+      message: String(data.get("message") ?? ""),
+      source: "Enquiry Dialog",
+    };
+    try {
+      setSubmitting(true);
+      await sendEnquiry(payload);
+      setOpen(false);
+      toast.success("Enquiry received. Our specialist will call you within 24 hours.");
+      form.reset();
+      navigate({ to: "/thank-you" });
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Could not send enquiry. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }, [navigate]);
   return (
     <EnquiryCtx.Provider value={api}>
@@ -44,7 +66,7 @@ export function EnquiryProvider({ children }: { children: ReactNode }) {
             </div>
             <div><Label htmlFor="product">Product of interest</Label><Input id="product" name="product" defaultValue={product ?? ""} /></div>
             <div><Label htmlFor="message">Project details</Label><Textarea id="message" name="message" rows={3} /></div>
-            <Button type="submit" className="w-full" size="lg">Submit Enquiry</Button>
+            <Button type="submit" className="w-full" size="lg" disabled={submitting}>{submitting ? "Sending…" : "Submit Enquiry"}</Button>
           </form>
         </DialogContent>
       </Dialog>
