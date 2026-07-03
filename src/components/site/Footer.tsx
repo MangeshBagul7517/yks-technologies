@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png";
 
 // Edit these URLs to update the social links shown in the footer.
 const socials = [
-  { Icon: Instagram, label: "Instagram", href: "https://instagram.com/" },
+  { Icon: Instagram, label: "Instagram", href: "https://instagram.com/ykstechnologies" },
   { Icon: Facebook, label: "Facebook", href: "https://facebook.com/" },
   { Icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/" },
   { Icon: Youtube, label: "YouTube", href: "https://youtube.com/" },
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
           {[
             { title: "Products", items: [["Sliding Windows","/products/sliding-windows"],["Tilt & Turn","/products/tilt-turn-windows"],["Lift & Slide","/products/lift-slide-doors"],["Folding Doors","/products/folding-doors"],["All Products","/products"]] },
-            { title: "Company", items: [["About","/about"],["Projects","/projects"],["Partners","/dealers"]] },
+            { title: "Company", items: [["About","/about"],["Projects","/projects"]] },
             { title: "Resources", items: [["Gallery","/gallery"],["Why uPVC","/why-upvc"],["FAQs","/faq"],["Contact","/contact"]] },
           ].map((col) => (
             <div key={col.title}>
