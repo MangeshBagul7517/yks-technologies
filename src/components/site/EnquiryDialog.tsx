@@ -34,7 +34,7 @@ export function EnquiryProvider({ children }: { children: ReactNode }) {
     };
     try {
       setSubmitting(true);
-      await sendEnquiry(payload);
+      await sendEnquiry(payload, "enquiry");
       setOpen(false);
       toast.success("Enquiry received. Our specialist will call you within 24 hours.");
       form.reset();
