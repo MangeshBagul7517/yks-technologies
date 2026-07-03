@@ -50,7 +50,7 @@ function Contact() {
     };
     try {
       setSubmitting(true);
-      await sendEnquiry(payload);
+      await sendEnquiry(payload, "contact");
       toast.success("Enquiry received.");
       form.reset();
       navigate({ to: "/thank-you" });

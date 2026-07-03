@@ -1,7 +1,17 @@
 import { Link } from "@tanstack/react-router";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
 import logo from "@/assets/logo.png";
+
+// Edit these URLs to update the social links shown in the footer.
+const socials = [
+  { Icon: Instagram, label: "Instagram", href: "https://instagram.com/" },
+  { Icon: Facebook, label: "Facebook", href: "https://facebook.com/" },
+  { Icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/" },
+  { Icon: Youtube, label: "YouTube", href: "https://youtube.com/" },
+  { Icon: Twitter, label: "X / Twitter", href: "https://x.com/" },
+];
 
 export function Footer() {
   return (
@@ -14,6 +24,20 @@ export function Footer() {
               <img src={logo} alt="YKS Technologies" className="h-11 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-sm">Gealan Authorised Fabricator - German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
+            <div className="flex flex-wrap gap-2 pt-2">
+              {socials.map(({ Icon, label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
+                  className="size-10 grid place-items-center rounded-full border border-border/60 text-muted-foreground hover:text-foreground hover:border-foreground/40 transition-colors"
+                >
+                  <Icon className="size-4" />
+                </a>
+              ))}
+            </div>
           </div>
           {[
             { title: "Products", items: [["Sliding Windows","/products/sliding-windows"],["Tilt & Turn","/products/tilt-turn-windows"],["Lift & Slide","/products/lift-slide-doors"],["Folding Doors","/products/folding-doors"],["All Products","/products"]] },
