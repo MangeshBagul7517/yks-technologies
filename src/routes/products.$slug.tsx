@@ -3,7 +3,6 @@ import { productBySlug, products, type Product } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/site/Section";
 import { useEnquiry } from "@/components/site/EnquiryDialog";
-import { BrochureButton } from "@/components/site/BrochureButton";
 import { ArrowRight, Check } from "lucide-react";
 
 export const Route = createFileRoute("/products/$slug")({
@@ -131,7 +130,6 @@ function ProductPage() {
             <div className="mt-5 space-y-2">
               <Button onClick={() => open(p.name)} className="w-full" size="lg">Enquire Now</Button>
               <Button onClick={() => open(p.name)} variant="outline" className="w-full" size="lg">Request Call Back</Button>
-              <BrochureButton variant="outline" className="w-full h-10" />
             </div>
           </div>
         </aside>
