@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Eyebrow, SectionHeader } from "@/components/site/Section";
-import villa from "@/assets/villa-casement.jpg";
-import profile from "@/assets/profile-detail.jpg";
+// Images live in ONE place — edit src/data/images.ts
+import { aboutImages } from "@/data/images";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -21,7 +21,7 @@ function About() {
   return (
     <div>
       <section className="relative">
-        <img src={villa} alt="Luxury villa façade" className="absolute inset-0 size-full object-cover" />
+        <img src={aboutImages.hero} alt="Luxury villa façade" className="absolute inset-0 size-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 to-ink" />
         <div className="relative mx-auto max-w-5xl px-6 pt-24 pb-32 text-center">
           <Eyebrow>Our Story</Eyebrow>
@@ -34,7 +34,7 @@ function About() {
         <div>
           <SectionHeader eyebrow="The YKS Technologies Standard" title="Engineering before aesthetics. Both, without compromise." lead="Every YKS Technologies profile is extruded on German lines, reinforced with galvanised steel, and sealed with co-extruded EPDM — the same standards applied in Berlin and Mumbai." />
         </div>
-        <img src={profile} alt="Profile detail" loading="lazy" className="rounded-2xl border border-border/60" />
+        <img src={aboutImages.detail} alt="Profile detail" loading="lazy" className="rounded-2xl border border-border/60" />
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">

@@ -1,12 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { SectionHeader } from "@/components/site/Section";
-import villa from "@/assets/villa-casement.jpg";
-import tilt from "@/assets/interior-tilt-turn.jpg";
-import liftSlide from "@/assets/lift-slide.jpg";
-import folding from "@/assets/folding-door.jpg";
-import hero from "@/assets/hero-villa.jpg";
-import profile from "@/assets/profile-detail.jpg";
+// Images + captions live in ONE place — edit src/data/images.ts
+import { galleryImages } from "@/data/images";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 export const Route = createFileRoute("/gallery")({
@@ -22,17 +18,7 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const tags = ["All","Windows","Doors","Villas","Apartments","Commercial"] as const;
-const items = [
-  { img: hero, tag: ["Doors","Villas"], title: "Coastal villa, Goa" },
-  { img: villa, tag: ["Windows","Villas"], title: "Heritage villa, Pune" },
-  { img: tilt, tag: ["Windows","Apartments"], title: "Sky residence, Mumbai" },
-  { img: liftSlide, tag: ["Doors","Villas"], title: "Hillside retreat, Lonavala" },
-  { img: folding, tag: ["Doors","Apartments"], title: "Garden residence, Bengaluru" },
-  { img: profile, tag: ["Windows","Commercial"], title: "Engineering detail" },
-  { img: villa, tag: ["Windows","Commercial"], title: "Boutique office, Delhi" },
-  { img: tilt, tag: ["Windows","Apartments"], title: "Penthouse, Hyderabad" },
-  { img: hero, tag: ["Doors","Villas"], title: "Modernist villa, Dubai" },
-];
+const items = galleryImages;
 
 function Gallery() {
   const [filter, setFilter] = useState<(typeof tags)[number]>("All");

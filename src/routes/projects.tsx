@@ -1,10 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeader } from "@/components/site/Section";
-import villa from "@/assets/villa-casement.jpg";
-import tilt from "@/assets/interior-tilt-turn.jpg";
-import liftSlide from "@/assets/lift-slide.jpg";
-import hero from "@/assets/hero-villa.jpg";
-import folding from "@/assets/folding-door.jpg";
+// Images live in ONE place — edit src/data/images.ts
+import { projectImages } from "@/data/images";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -19,12 +16,12 @@ export const Route = createFileRoute("/projects")({
 });
 
 const projects = [
-  { img: hero, name: "Mereveille — Coastal Villa", loc: "Anjuna, Goa", client: "Private residence", products: "Lift & Slide Doors, Sliding Windows", desc: "A 12-metre lift-and-slide opening dissolves the living room into the infinity pool deck." },
-  { img: villa, name: "Maison Verde", loc: "Koregaon Park, Pune", client: "Private residence", products: "Casement & Bay Windows", desc: "Heritage proportions reimagined with concealed European hardware across 64 sashes." },
-  { img: tilt, name: "Skyline 47", loc: "BKC, Mumbai", client: "Sky residence", products: "Tilt & Turn, Balcony Doors", desc: "Acoustic systems calibrated for arterial-road frontage; ambient noise reduced by 41 dB." },
-  { img: liftSlide, name: "Aetheria Hillside", loc: "Lonavala", client: "Private residence", products: "Lift & Slide Doors", desc: "Wind-rated façade glazing for monsoon-grade exposure at 800 m elevation." },
-  { img: folding, name: "Verandah Residences", loc: "Whitefield, Bengaluru", client: "10 row villas", products: "Folding Doors", desc: "Bi-fold systems extend living rooms into private gardens across the entire development." },
-  { img: tilt, name: "Asha Health Tower", loc: "Hyderabad", client: "200-bed hospital", products: "Antimicrobial fixed systems", desc: "Antimicrobial-finished frames for critical-care environments." },
+  { img: projectImages.merveilleCoastalVilla, name: "Mereveille — Coastal Villa", loc: "Anjuna, Goa", client: "Private residence", products: "Lift & Slide Doors, Sliding Windows", desc: "A 12-metre lift-and-slide opening dissolves the living room into the infinity pool deck." },
+  { img: projectImages.maisonVerde, name: "Maison Verde", loc: "Koregaon Park, Pune", client: "Private residence", products: "Casement & Bay Windows", desc: "Heritage proportions reimagined with concealed European hardware across 64 sashes." },
+  { img: projectImages.skyline47, name: "Skyline 47", loc: "BKC, Mumbai", client: "Sky residence", products: "Tilt & Turn, Balcony Doors", desc: "Acoustic systems calibrated for arterial-road frontage; ambient noise reduced by 41 dB." },
+  { img: projectImages.aetheriaHillside, name: "Aetheria Hillside", loc: "Lonavala", client: "Private residence", products: "Lift & Slide Doors", desc: "Wind-rated façade glazing for monsoon-grade exposure at 800 m elevation." },
+  { img: projectImages.verandahResidences, name: "Verandah Residences", loc: "Whitefield, Bengaluru", client: "10 row villas", products: "Folding Doors", desc: "Bi-fold systems extend living rooms into private gardens across the entire development." },
+  { img: projectImages.ashaHealthTower, name: "Asha Health Tower", loc: "Hyderabad", client: "200-bed hospital", products: "Antimicrobial fixed systems", desc: "Antimicrobial-finished frames for critical-care environments." },
 ];
 
 function Projects() {
