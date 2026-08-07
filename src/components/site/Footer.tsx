@@ -2,7 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
-import logo from "@/assets/logo.png";
+// Logo lives in ONE place — edit src/data/images.ts (brandImages.logo)
+import { brandImages } from "@/data/images";
 
 // Edit these URLs to update the social links shown in the footer.
 const socials = [
@@ -21,7 +22,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2 space-y-5">
             <Link to="/" aria-label="YKS Technologies" className="inline-flex">
-              <img src={logo} alt="YKS Technologies" className="h-11 w-auto" />
+              <img src={brandImages.logo} alt="YKS Technologies" className="h-11 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-sm">Gealan Authorised Fabricator - German-engineered uPVC window and door systems for residences, villas and architectural projects.</p>
             <div className="flex flex-wrap gap-2 pt-2">

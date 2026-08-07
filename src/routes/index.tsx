@@ -5,11 +5,8 @@ import { Button } from "@/components/ui/button";
 import { SectionHeader, Eyebrow } from "@/components/site/Section";
 import { useEnquiry } from "@/components/site/EnquiryDialog";
 import { products } from "@/data/products";
-import heroVilla from "@/assets/hero-villa.jpg";
-import profile from "@/assets/profile-detail.jpg";
-import villa from "@/assets/villa-casement.jpg";
-import tilt from "@/assets/interior-tilt-turn.jpg";
-import liftSlide from "@/assets/lift-slide.jpg";
+// Images live in ONE place — edit src/data/images.ts
+import { homeImages } from "@/data/images";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,7 +39,7 @@ function Index() {
     <div className="-mt-24">
       {/* HERO */}
       <section className="relative min-h-[100svh] overflow-hidden">
-        <img src={heroVilla} alt="Luxury villa with full-height uPVC sliding doors at dusk" className="absolute inset-0 size-full object-cover" width={1920} height={1280} />
+        <img src={homeImages.hero} alt="Luxury villa with full-height uPVC sliding doors at dusk" className="absolute inset-0 size-full object-cover" width={1920} height={1280} />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/40 to-ink" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/20 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-6 pt-32 pb-16 sm:pt-44 sm:pb-28 lg:pt-56 lg:pb-40">
@@ -130,7 +127,7 @@ function Index() {
           </div>
           <div className="relative">
             <div className="absolute -inset-8 bg-gradient-to-tr from-azure/20 to-transparent rounded-3xl blur-3xl" />
-            <img src={profile} alt="Multi-chamber uPVC profile cross-section" loading="lazy" width={1600} height={1200} className="relative rounded-2xl border border-border/60 shadow-[var(--shadow-luxury)]" />
+            <img src={homeImages.engineeringDetail} alt="Multi-chamber uPVC profile cross-section" loading="lazy" width={1600} height={1200} className="relative rounded-2xl border border-border/60 shadow-[var(--shadow-luxury)]" />
           </div>
         </div>
       </section>
@@ -165,10 +162,10 @@ function Index() {
           <SectionHeader eyebrow="Solutions" title="Engineered for every envelope." lead="From private villas to towers and hospitality — YKS Technologies specifies, fabricates and installs as one accountable partner." />
           <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { t: "Villas", img: villa },
-              { t: "Apartments", img: tilt },
-              { t: "Hospitality", img: liftSlide },
-              { t: "Commercial", img: heroVilla },
+              { t: "Villas", img: homeImages.solutionVillas },
+              { t: "Apartments", img: homeImages.solutionApartments },
+              { t: "Hospitality", img: homeImages.solutionHospitality },
+              { t: "Commercial", img: homeImages.solutionCommercial },
             ].map((s) => (
               <Link key={s.t} to="/solutions" className="group relative aspect-[3/4] overflow-hidden rounded-2xl">
                 <img src={s.img} alt={s.t} loading="lazy" width={600} height={800} className="size-full object-cover transition-transform duration-[1.2s] group-hover:scale-110" />
