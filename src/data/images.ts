@@ -17,11 +17,21 @@
  * ============================================================
  */
 
+
+/* ------------------------------------------------------------
+ * 0. IMAGE HOST — where the uploaded images are served from.
+ *    Keep this as-is unless you move your images somewhere else.
+ * ---------------------------------------------------------- */
+const IMAGE_HOST = "https://test11221212.lovable.app";
+
+/** Turns an uploaded image path into a full link that works on any domain. */
+const img = (link: string) => (link.startsWith("/__l5e/") ? IMAGE_HOST + link : link);
+
 /* ------------------------------------------------------------
  * 1. BRAND — logo used in the header and footer
  * ---------------------------------------------------------- */
 export const brandImages = {
-  logo: "/__l5e/assets-v1/6b0f2c20-9e9f-4514-a3d2-59e4ee8b1e85/logo.png",
+  logo: img("/__l5e/assets-v1/6b0f2c20-9e9f-4514-a3d2-59e4ee8b1e85/logo.png"),
 };
 
 /* ------------------------------------------------------------
@@ -29,14 +39,14 @@ export const brandImages = {
  * ---------------------------------------------------------- */
 export const homeImages = {
   /** Big full-screen background image at the very top of the homepage */
-  hero: "/__l5e/assets-v1/bd816bc7-dd8a-4c01-9d27-4b3637a6658a/hero-villa.jpg",
+  hero: img("/__l5e/assets-v1/bd816bc7-dd8a-4c01-9d27-4b3637a6658a/hero-villa.jpg"),
   /** Image next to the "engineering / profile" section */
-  engineeringDetail: "/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg",
+  engineeringDetail: img("/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg"),
   /** The 4 square cards in the "Solutions" band */
-  solutionVillas: "/__l5e/assets-v1/9e75a2b5-4273-4601-b6f6-83c6aac32329/villa-casement.jpg",
-  solutionApartments: "/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg",
-  solutionHospitality: "/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg",
-  solutionCommercial: "/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg",
+  solutionVillas: img("/__l5e/assets-v1/9e75a2b5-4273-4601-b6f6-83c6aac32329/villa-casement.jpg"),
+  solutionApartments: img("/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg"),
+  solutionHospitality: img("/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg"),
+  solutionCommercial: img("/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg"),
 };
 
 /* ------------------------------------------------------------
@@ -44,23 +54,23 @@ export const homeImages = {
  * ---------------------------------------------------------- */
 export const aboutImages = {
   /** Background image behind the About page title */
-  hero: "/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg",
+  hero: img("/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg"),
   /** Photo beside "The YKS Technologies Standard" text */
-  detail: "/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg",
+  detail: img("/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg"),
 };
 
 /* ------------------------------------------------------------
  * 4. SOLUTIONS PAGE — one image per solution card
  * ---------------------------------------------------------- */
 export const solutionImages = {
-  villas: "/__l5e/assets-v1/9e75a2b5-4273-4601-b6f6-83c6aac32329/villa-casement.jpg",
-  apartments: "/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg",
-  luxuryResidences: "/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg",
-  commercialBuildings: "/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg",
-  hospitality: "/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg",
-  hospitals: "/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg",
-  education: "/__l5e/assets-v1/a50e73de-7b82-49d6-abe1-fff0c0ab6fbd/sliding-windows.jpg",
-  corporateOffices: "/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg",
+  villas: img("/__l5e/assets-v1/9e75a2b5-4273-4601-b6f6-83c6aac32329/villa-casement.jpg"),
+  apartments: img("/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg"),
+  luxuryResidences: img("/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg"),
+  commercialBuildings: img("/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg"),
+  hospitality: img("/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg"),
+  hospitals: img("/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg"),
+  education: img("/__l5e/assets-v1/a50e73de-7b82-49d6-abe1-fff0c0ab6fbd/sliding-windows.jpg"),
+  corporateOffices: img("/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg"),
 };
 
 /* ------------------------------------------------------------
@@ -68,28 +78,28 @@ export const solutionImages = {
  * ---------------------------------------------------------- */
 export const productImages: Record<string, string> = {
   // Windows
-  "sliding-windows": "/__l5e/assets-v1/a50e73de-7b82-49d6-abe1-fff0c0ab6fbd/sliding-windows.jpg",
-  "casement-windows": "/__l5e/assets-v1/c67e8a9c-7534-4a91-ad55-7daf2b561790/casement-windows.jpg",
-  "tilt-turn-windows": "/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg",
-  "fixed-windows": "/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg",
-  "bay-windows": "/__l5e/assets-v1/3a32504e-67a4-4226-9b76-33ae1a560662/bay-windows.jpg",
-  "combination-windows": "/__l5e/assets-v1/91424cd1-216a-4027-b035-0916460e125a/interior-tilt-turn.jpg",
-  "villa-windows": "/__l5e/assets-v1/9e75a2b5-4273-4601-b6f6-83c6aac32329/villa-casement.jpg",
-  "designer-windows": "/__l5e/assets-v1/690a9b44-3316-44c6-acf2-a6ee22adfe65/designer-windows.jpg",
+  "sliding-windows": img("/__l5e/assets-v1/a50e73de-7b82-49d6-abe1-fff0c0ab6fbd/sliding-windows.jpg"),
+  "casement-windows": img("/__l5e/assets-v1/c67e8a9c-7534-4a91-ad55-7daf2b561790/casement-windows.jpg"),
+  "tilt-turn-windows": img("/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg"),
+  "fixed-windows": img("/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg"),
+  "bay-windows": img("/__l5e/assets-v1/3a32504e-67a4-4226-9b76-33ae1a560662/bay-windows.jpg"),
+  "combination-windows": img("/__l5e/assets-v1/da2de61b-3f02-4491-bb91-292170e861a3/combination-windows.jpg"),
+  "villa-windows": img("/__l5e/assets-v1/9e75a2b5-4273-4601-b6f6-83c6aac32329/villa-casement.jpg"),
+  "designer-windows": img("/__l5e/assets-v1/690a9b44-3316-44c6-acf2-a6ee22adfe65/designer-windows.jpg"),
   // Doors
-  "sliding-doors": "/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg",
-  "french-doors": "/__l5e/assets-v1/98317401-2550-4afd-ba3d-cf9cbef03dac/french-doors.jpg",
-  "casement-doors": "/__l5e/assets-v1/04397377-552c-4eea-97df-56af4c1b06de/folding-door.jpg",
-  "lift-slide-doors": "/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg",
-  "folding-doors": "/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg",
-  "villa-doors": "/__l5e/assets-v1/bdbaef18-6558-4ffd-b802-5186599724a3/villa-doors.jpg",
-  "balcony-doors": "/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg",
+  "sliding-doors": img("/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg"),
+  "french-doors": img("/__l5e/assets-v1/98317401-2550-4afd-ba3d-cf9cbef03dac/french-doors.jpg"),
+  "casement-doors": img("/__l5e/assets-v1/7dd76148-3af1-4d67-a564-4895ee22e62f/casement-doors.jpg"),
+  "lift-slide-doors": img("/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg"),
+  "folding-doors": img("/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg"),
+  "villa-doors": img("/__l5e/assets-v1/bdbaef18-6558-4ffd-b802-5186599724a3/villa-doors.jpg"),
+  "balcony-doors": img("/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg"),
   // Special Systems
-  "large-opening-systems": "/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg",
-  "luxury-villa-collection": "/__l5e/assets-v1/bdbaef18-6558-4ffd-b802-5186599724a3/villa-doors.jpg",
-  "high-performance-systems": "/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg",
-  "acoustic-systems": "/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg",
-  "energy-efficient-systems": "/__l5e/assets-v1/31d7c2c8-0ac6-4ab0-a861-7f077ea095d2/lift-slide.jpg",
+  "large-opening-systems": img("/__l5e/assets-v1/2f339371-23d9-4062-b518-81ba40f82550/large-opening-systems.jpg"),
+  "luxury-villa-collection": img("/__l5e/assets-v1/bdbaef18-6558-4ffd-b802-5186599724a3/villa-doors.jpg"),
+  "high-performance-systems": img("/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg"),
+  "acoustic-systems": img("/__l5e/assets-v1/7ca18c5e-f623-48e3-b220-3ea071c6ffc5/acoustic-systems.jpg"),
+  "energy-efficient-systems": img("/__l5e/assets-v1/31d7c2c8-0ac6-4ab0-a861-7f077ea095d2/lift-slide.jpg"),
 };
 
 /* ------------------------------------------------------------
@@ -98,25 +108,25 @@ export const productImages: Record<string, string> = {
  *    Allowed tags: "Windows" | "Doors" | "Villas" | "Apartments" | "Commercial"
  * ---------------------------------------------------------- */
 export const galleryImages = [
-  { img: "/__l5e/assets-v1/bd816bc7-dd8a-4c01-9d27-4b3637a6658a/hero-villa.jpg", title: "Coastal villa, Goa", tag: ["Doors", "Villas"] },
-  { img: "/__l5e/assets-v1/c67e8a9c-7534-4a91-ad55-7daf2b561790/casement-windows.jpg", title: "Heritage villa, Pune", tag: ["Windows", "Villas"] },
-  { img: "/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg", title: "Sky residence, Mumbai", tag: ["Windows", "Apartments"] },
-  { img: "/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg", title: "Hillside retreat, Lonavala", tag: ["Doors", "Villas"] },
-  { img: "/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg", title: "Garden residence, Bengaluru", tag: ["Doors", "Apartments"] },
-  { img: "/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg", title: "Engineering detail", tag: ["Windows", "Commercial"] },
-  { img: "/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg", title: "Boutique office, Delhi", tag: ["Windows", "Commercial"] },
-  { img: "/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg", title: "Penthouse, Hyderabad", tag: ["Windows", "Apartments"] },
-  { img: "/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg", title: "Modernist villa, Dubai", tag: ["Doors", "Villas"] },
+  { img: img("/__l5e/assets-v1/bd816bc7-dd8a-4c01-9d27-4b3637a6658a/hero-villa.jpg"), title: "Coastal villa, Goa", tag: ["Doors", "Villas"] },
+  { img: img("/__l5e/assets-v1/c67e8a9c-7534-4a91-ad55-7daf2b561790/casement-windows.jpg"), title: "Heritage villa, Pune", tag: ["Windows", "Villas"] },
+  { img: img("/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg"), title: "Sky residence, Mumbai", tag: ["Windows", "Apartments"] },
+  { img: img("/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg"), title: "Hillside retreat, Lonavala", tag: ["Doors", "Villas"] },
+  { img: img("/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg"), title: "Garden residence, Bengaluru", tag: ["Doors", "Apartments"] },
+  { img: img("/__l5e/assets-v1/9b78af2f-1660-46f9-a2a7-68d7a748e0b0/profile-detail.jpg"), title: "Engineering detail", tag: ["Windows", "Commercial"] },
+  { img: img("/__l5e/assets-v1/05d9a54c-50f9-4c7e-8f9d-feb608b9f473/fixed-windows.jpg"), title: "Boutique office, Delhi", tag: ["Windows", "Commercial"] },
+  { img: img("/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg"), title: "Penthouse, Hyderabad", tag: ["Windows", "Apartments"] },
+  { img: img("/__l5e/assets-v1/113caad0-2cd5-45f7-b360-9d0496d99b95/sliding-doors.jpg"), title: "Modernist villa, Dubai", tag: ["Doors", "Villas"] },
 ];
 
 /* ------------------------------------------------------------
  * 7. PROJECTS PAGE — one image per project
  * ---------------------------------------------------------- */
 export const projectImages = {
-  merveilleCoastalVilla: "/__l5e/assets-v1/bd816bc7-dd8a-4c01-9d27-4b3637a6658a/hero-villa.jpg",
-  maisonVerde: "/__l5e/assets-v1/c67e8a9c-7534-4a91-ad55-7daf2b561790/casement-windows.jpg",
-  skyline47: "/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg",
-  aetheriaHillside: "/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg",
-  verandahResidences: "/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg",
-  ashaHealthTower: "/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg",
+  merveilleCoastalVilla: img("/__l5e/assets-v1/bd816bc7-dd8a-4c01-9d27-4b3637a6658a/hero-villa.jpg"),
+  maisonVerde: img("/__l5e/assets-v1/c67e8a9c-7534-4a91-ad55-7daf2b561790/casement-windows.jpg"),
+  skyline47: img("/__l5e/assets-v1/7a2f418d-771b-47c1-a319-c8fec0f48054/balcony-doors.jpg"),
+  aetheriaHillside: img("/__l5e/assets-v1/0d1c047b-d580-4f1e-bcf8-f960865ecfd4/lift-slide-doors.jpg"),
+  verandahResidences: img("/__l5e/assets-v1/61e286cb-b8ee-4be1-932f-f3ee1457af9f/folding-doors.jpg"),
+  ashaHealthTower: img("/__l5e/assets-v1/1536fb6e-4f84-40f6-8aa7-1f91cbde8310/tilt-turn-windows.jpg"),
 };
