@@ -76,14 +76,14 @@ function Contact() {
             { Icon: Phone, t: "Call us", d: "+917775888747", href: "tel:+917775888747" },
             { Icon: MessageCircle, t: "WhatsApp", d: "Chat with a specialist", href: "https://wa.me/917775888747" },
             { Icon: Mail, t: "Email", d: "support@ykstechnologies.com", href: "mailto:support@ykstechnologies.com" },
-            { Icon: MapPin, t: "Studio", d: "YKS Technologies, Chh. Sambhaji Nagar", href: "#" },
+            { Icon: MapPin, t: "Location", d: "YKS Technologies, Opp. Glenmark Pharmaceuticals Ltd, Shendra MIDC, Chh. Sambhaji Nagar", href: "#" },
           ].map(({ Icon, t, d, href }) => (
             <a key={t} href={href} className="block rounded-2xl border border-border/60 p-5 hover:bg-card/60 transition-colors">
               <div className="flex items-center gap-4"><div className="size-10 rounded-lg bg-azure/15 text-azure grid place-items-center"><Icon className="size-5" /></div><div><div className="font-display font-semibold">{t}</div><div className="text-sm text-muted-foreground">{d}</div></div></div>
             </a>
           ))}
           <div className="rounded-2xl border border-border/60 overflow-hidden aspect-video">
-            <iframe title="Map" className="size-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.403662363896!2d75.4214301!3d19.865169899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba356e929355f%3A0xe565cdfdcf0ed13a!2sYKS%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1783074818937!5m2!1sen!2sin" />
+            <iframe title="Map" className="size-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.2337845631087!2d75.5038103!3d19.8723478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba500403cc5eb%3A0x9dbdde25e908244c!2sYkstechnologies!5e0!3m2!1sen!2sin!4v1790354248861!5m2!1sen!2sin" />
           </div>
         </aside>
       </div>
