@@ -76,7 +76,7 @@ function Contact() {
             { Icon: Phone, t: "Call us", d: "+917775888747", href: "tel:+917775888747" },
             { Icon: MessageCircle, t: "WhatsApp", d: "Chat with a specialist", href: "https://wa.me/917775888747" },
             { Icon: Mail, t: "Email", d: "support@ykstechnologies.com", href: "mailto:support@ykstechnologies.com" },
-            { Icon: MapPin, t: "Location", d: "YKS Technologies, Opp. Glenmark Pharmaceuticals Ltd, Shendra MIDC, Chh. Sambhaji Nagar", href: "#" },
+            { Icon: MapPin, t: "Location", d: "YKS Technologies, Opp. Glenmark Pharmaceuticals Ltd, Shendra MIDC, Chh. Sambhaji Nagar, 431154", href: "https://maps.app.goo.gl/p35txsPAoG8JarSo8" },
           ].map(({ Icon, t, d, href }) => (
             <a key={t} href={href} className="block rounded-2xl border border-border/60 p-5 hover:bg-card/60 transition-colors">
               <div className="flex items-center gap-4"><div className="size-10 rounded-lg bg-azure/15 text-azure grid place-items-center"><Icon className="size-5" /></div><div><div className="font-display font-semibold">{t}</div><div className="text-sm text-muted-foreground">{d}</div></div></div>
